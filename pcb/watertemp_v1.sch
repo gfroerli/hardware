@@ -27,17 +27,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LPC11U24FBD48 U1
-U 1 1 59356CC0
-P 2500 5400
-F 0 "U1" H 1450 6850 50  0000 C CNN
-F 1 "LPC11U24FBD48" H 1700 4180 50  0000 C CNN
-F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 3450 4200 50  0001 C CNN
-F 3 "" H 2500 3925 50  0001 C CNN
-	1    2500 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L RN2483 U3
 U 1 1 59358689
 P 6250 4950
@@ -49,13 +38,13 @@ F 3 "" H 4450 3900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1100 5850 0    60   Input ~ 0
-UC-RX
+UC-RX0
 Text GLabel 1100 6050 0    60   Input ~ 0
-UC-TX
+UC-TX0
 Text GLabel 7350 5500 2    60   Input ~ 0
-UC-RX
+UC-RX0
 Text GLabel 7350 5300 2    60   Input ~ 0
-UC-TX
+UC-TX0
 $Comp
 L GND #PWR13
 U 1 1 59359076
@@ -566,7 +555,6 @@ NoConn ~ 1300 4800
 NoConn ~ 1300 4900
 NoConn ~ 1300 5000
 NoConn ~ 1300 5700
-NoConn ~ 1300 5800
 NoConn ~ 1300 6100
 NoConn ~ 1300 6200
 NoConn ~ 1300 6300
@@ -583,7 +571,6 @@ NoConn ~ 3700 4600
 NoConn ~ 3700 4500
 NoConn ~ 3700 4400
 NoConn ~ 3700 4300
-NoConn ~ 3700 4100
 $Comp
 L R R1
 U 1 1 59362CCB
@@ -715,13 +702,11 @@ Wire Wire Line
 Wire Wire Line
 	5600 2250 5600 2400
 Text GLabel 1300 5600 0    60   Input ~ 0
-LED3
-Text GLabel 3900 4800 2    60   Input ~ 0
 LED2
-Text GLabel 3900 4200 2    60   Input ~ 0
+Text GLabel 3900 4800 2    60   Input ~ 0
 LED1
-Wire Wire Line
-	3900 4200 3700 4200
+Text GLabel 950  5700 0    60   Input ~ 0
+LED3
 Wire Wire Line
 	3700 4800 3900 4800
 Text GLabel 5150 1550 1    60   Input ~ 0
@@ -816,4 +801,65 @@ Wire Wire Line
 	9650 2750 10050 2750
 Wire Wire Line
 	9950 2850 10050 2850
+$Comp
+L CONN_01X02 J?
+U 1 1 5973D2E1
+P 4100 2450
+F 0 "J?" H 4100 2600 50  0000 C CNN
+F 1 "CONN_01X02" V 4200 2450 50  0000 C CNN
+F 2 "" H 4100 2450 50  0001 C CNN
+F 3 "" H 4100 2450 50  0001 C CNN
+	1    4100 2450
+	1    0    0    -1  
+$EndComp
+Text Notes 3300 2150 0    100  ~ 0
+UART
+Wire Wire Line
+	950  5700 1250 5700
+Wire Wire Line
+	1250 5700 1250 5800
+Wire Wire Line
+	1250 5800 1300 5800
+$Comp
+L LPC11U24FBD48 U1
+U 1 1 59356CC0
+P 2500 5400
+F 0 "U1" H 1450 6850 50  0000 C CNN
+F 1 "LPC11U24FBD48" H 1700 4180 50  0000 C CNN
+F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 3450 4200 50  0001 C CNN
+F 3 "" H 2500 3925 50  0001 C CNN
+	1    2500 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 4100 2    60   Input ~ 0
+UC-TX1
+Text GLabel 3900 4200 2    60   Input ~ 0
+UC-RX1
+Wire Wire Line
+	3900 4100 3700 4100
+Wire Wire Line
+	3700 4200 3900 4200
+Text GLabel 3750 2400 0    60   Input ~ 0
+UC-RX1
+Text GLabel 3750 2500 0    60   Input ~ 0
+UC-TX1
+Wire Wire Line
+	3750 2400 3900 2400
+Wire Wire Line
+	3900 2500 3750 2500
+$Comp
+L CONN_01X01 J?
+U 1 1 5973F46D
+P 4100 3050
+F 0 "J?" H 4100 3150 50  0000 C CNN
+F 1 "CONN_01X01" V 4200 3050 50  0000 C CNN
+F 2 "" H 4100 3050 50  0001 C CNN
+F 3 "" H 4100 3050 50  0001 C CNN
+	1    4100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3050 3750 3050
+Text GLabel 3750 3050 0    60   Input ~ 0
+UC-TX0
 $EndSCHEMATC
