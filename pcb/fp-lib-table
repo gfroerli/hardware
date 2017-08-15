@@ -1,7 +1,9 @@
 (fp_lib_table
-  (lib (name RN2483)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp/hardware/libs/RN2483.pretty)(options "")(descr ""))
-  (lib (name Resistors_SMD)(type Github)(uri "$(KIGITHUB)/Resistors_SMD.pretty")(options "")(descr ""))
+  (lib (name RN2483)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/RN2483.pretty)(options "")(descr ""))
+  (lib (name Resistors_SMD)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/Resistors_SMD.pretty)(options "")(descr ""))
   (lib (name Sensirion)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/sensirion.pretty)(options "")(descr ""))
-  (lib (name Connectors_JST)(type Github)(uri "$(KIGITHUB)/Connectors_JST.pretty")(options "")(descr ""))
-  (lib (name RF_Antennas)(type Github)(uri "$(KIGITHUB)/RF_Antennas.pretty")(options "")(descr ""))
+  (lib (name RF_Antennas)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/RF_Antennas.pretty)(options "")(descr ""))
+  (lib (name Battery_Clips)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/Battery_Clips.pretty)(options "")(descr ""))
+  (lib (name LEDs)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/LEDs.pretty)(options "")(descr ""))
+  (lib (name Capacitors_SMD)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/Capacitors_SMD.pretty)(options "")(descr ""))
 )
