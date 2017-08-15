@@ -1,9 +1,6 @@
 [submodule "libs/Resistors_SMD.pretty"]
 	path = libs/Resistors_SMD.pretty
 	url = https://github.com/kicad/Resistors_SMD.pretty
-[submodule "libs/RF_Antennas.pretty"]
-	path = libs/RF_Antennas.pretty
-	url = https://github.com/kicad/RF_Antennas.pretty
 [submodule "libs/LEDs.pretty"]
 	path = libs/LEDs.pretty
 	url = https://github.com/kicad/LEDs.pretty
