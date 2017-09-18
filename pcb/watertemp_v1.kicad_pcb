@@ -2,13 +2,13 @@
 
   (general
     (links 113)
-    (no_connects 3)
+    (no_connects 0)
     (area 26.924999 39.924999 83.075001 130.075001)
     (thickness 1.6)
     (drawings 28)
     (tracks 324)
     (zones 0)
-    (modules 51)
+    (modules 54)
     (nets 81)
   )
 
@@ -284,6 +284,42 @@
     (uvia_dia 0.3)
     (uvia_drill 0.1)
     (add_net "Net-(AE1-Pad1)")
+  )
+
+  (module StitchingVia:VIA-0.6mm (layer F.Cu) (tedit 59933C8C) (tstamp 59C01FFA)
+    (at 58.166 110.744)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.4) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
+  )
+
+  (module StitchingVia:VIA-0.6mm (layer F.Cu) (tedit 59933C8C) (tstamp 59C01FF2)
+    (at 58.166 109.728)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.4) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
+  )
+
+  (module StitchingVia:VIA-0.6mm (layer F.Cu) (tedit 59933C8C) (tstamp 59C01FDC)
+    (at 58.166 108.712)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA-0.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.4) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
   )
 
   (module Capacitors_SMD:C_0805_HandSoldering (layer F.Cu) (tedit 5994BD80) (tstamp 5975C65F)
