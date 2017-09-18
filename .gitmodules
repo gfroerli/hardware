@@ -7,3 +7,6 @@
 [submodule "libs/Capacitors_SMD.pretty"]
 	path = libs/Capacitors_SMD.pretty
 	url = https://github.com/kicad/Capacitors_SMD.pretty
+[submodule "libs/TO_SOT_Packages_SMD.pretty"]
+	path = libs/TO_SOT_Packages_SMD.pretty
+	url = https://github.com/KiCad/TO_SOT_Packages_SMD.pretty
