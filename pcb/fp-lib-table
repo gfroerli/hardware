@@ -9,4 +9,5 @@
   (lib (name RF)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/RF.pretty)(options "")(descr ""))
   (lib (name Logos)(type KiCad)(uri /home/danilo/Projects/coredump/watertemp-hardware/libs/Logos.pretty)(options "")(descr ""))
   (lib (name TO_SOT_Packages_SMD)(type KiCad)(uri "$(KIPRJMOD)/../libs/TO_SOT_Packages_SMD.pretty")(options "")(descr ""))
+  (lib (name SWD)(type KiCad)(uri "$(KIPRJMOD)/../libs/swd.pretty")(options "")(descr ""))
 )
