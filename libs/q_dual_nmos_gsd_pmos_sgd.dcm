@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Q_DUAL_NMOS_GSD_PMOS_SGD
+D Dual Transistor N-CH/P-CH
+K NMOS PMOS n-mos n-mosfet p-mos p-mosfet transistor
+$ENDCMP
+#
+#End Doc Library

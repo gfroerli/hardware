@@ -1,4 +1,4 @@
-update=Mon 05 Jun 2017 10:37:15 PM CEST
+update=lun 06 Nov 2017 10:04:42 +0100
 version=1
 last_client=kicad
 [pcbnew]
@@ -41,3 +41,4 @@ LibName9=texas
 LibName10=LP5907-Q1
 LibName11=sensirion
 LibName12=ds18b20
+LibName13=q_dual_nmos_gsd_pmos_sgd
