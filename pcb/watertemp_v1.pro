@@ -1,4 +1,4 @@
-update=Mon 05 Jun 2017 10:37:15 PM CEST
+update=Mon 23 Oct 2017 07:58:22 PM CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -41,3 +41,4 @@ LibName9=texas
 LibName10=LP5907-Q1
 LibName11=sensirion
 LibName12=ds18b20
+LibName13=MAX64xx
