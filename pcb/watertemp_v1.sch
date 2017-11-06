@@ -275,8 +275,6 @@ Text GLabel 2350 800  1    60   Input ~ 0
 3.3V
 Text GLabel 2550 800  1    60   Input ~ 0
 3.3V
-NoConn ~ 3650 2950
-NoConn ~ 3650 3050
 $Comp
 L SHT21 U3
 U 1 1 5935D012
@@ -1237,4 +1235,22 @@ Wire Wire Line
 	7800 2550 7800 2650
 Text Notes 4750 2400 0    100  ~ 0
 VBat Measurement
+$Comp
+L GND #PWR?
+U 1 1 5A00D307
+P 3850 3125
+F 0 "#PWR?" H 3850 2875 50  0001 C CNN
+F 1 "GND" H 3850 2975 50  0000 C CNN
+F 2 "" H 3850 3125 50  0001 C CNN
+F 3 "" H 3850 3125 50  0001 C CNN
+	1    3850 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2950 3850 2950
+Wire Wire Line
+	3850 2950 3850 3125
+Wire Wire Line
+	3650 3050 3850 3050
+Connection ~ 3850 3050
 $EndSCHEMATC
