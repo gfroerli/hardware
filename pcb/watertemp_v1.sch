@@ -363,7 +363,6 @@ NoConn ~ 1250 2750
 NoConn ~ 1250 3150
 NoConn ~ 1250 3250
 NoConn ~ 1250 3350
-NoConn ~ 1250 3450
 NoConn ~ 3650 2550
 NoConn ~ 3650 2450
 NoConn ~ 3650 2350
@@ -374,7 +373,6 @@ NoConn ~ 3650 1950
 NoConn ~ 3650 1750
 NoConn ~ 3650 1650
 NoConn ~ 3650 1550
-NoConn ~ 3650 1350
 $Comp
 L R R5
 U 1 1 59362CCB
@@ -902,6 +900,36 @@ F 3 "" H 7800 3150 50  0001 C CNN
 $EndComp
 Text GLabel 8250 2950 2    60   Input ~ 0
 ADC
+Text GLabel 5850 1400 3    60   Input ~ 0
+VBat
+Text GLabel 5450 2550 0    60   Input ~ 0
+VBat
+$Comp
+L Q_DUAL_NMOS_GSD_PMOS_SGD Q2
+U 1 1 5A0030A5
+P 5900 3100
+F 0 "Q2" H 6100 3200 50  0000 L CNN
+F 1 "Q_DUAL_NMOS_GSD_PMOS_SGD" H 6100 3100 50  0000 L CNN
+F 2 "" H 6100 3250 50  0001 C CNN
+F 3 "" H 5900 3100 50  0001 C CNN
+	1    5900 3100
+	1    0    0    -1  
+$EndComp
+Text Notes 4750 2400 0    100  ~ 0
+VBat Measurement
+$Comp
+L GND #PWR?
+U 1 1 5A00D307
+P 3850 3125
+F 0 "#PWR?" H 3850 2875 50  0001 C CNN
+F 1 "GND" H 3850 2975 50  0000 C CNN
+F 2 "" H 3850 3125 50  0001 C CNN
+F 3 "" H 3850 3125 50  0001 C CNN
+	1    3850 3125
+	1    0    0    -1  
+$EndComp
+Text GLabel 1050 3450 0    60   Input ~ 0
+VBat
 Wire Wire Line
 	3150 6550 3250 6550
 Wire Wire Line
@@ -1206,25 +1234,10 @@ Connection ~ 6000 2550
 Wire Wire Line
 	5850 1250 5850 1400
 Connection ~ 5850 1250
-Text GLabel 5850 1400 3    60   Input ~ 0
-VBat
-Text GLabel 5450 2550 0    60   Input ~ 0
-VBat
 Wire Wire Line
 	6000 3300 6000 3400
 Wire Wire Line
 	5600 3350 5600 3400
-$Comp
-L Q_DUAL_NMOS_GSD_PMOS_SGD Q2
-U 1 1 5A0030A5
-P 5900 3100
-F 0 "Q2" H 6100 3200 50  0000 L CNN
-F 1 "Q_DUAL_NMOS_GSD_PMOS_SGD" H 6100 3100 50  0000 L CNN
-F 2 "" H 6100 3250 50  0001 C CNN
-F 3 "" H 5900 3100 50  0001 C CNN
-	1    5900 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 2850 6000 2850
 Wire Wire Line
@@ -1233,19 +1246,6 @@ Wire Wire Line
 	7800 2850 7800 3050
 Wire Wire Line
 	7800 2550 7800 2650
-Text Notes 4750 2400 0    100  ~ 0
-VBat Measurement
-$Comp
-L GND #PWR?
-U 1 1 5A00D307
-P 3850 3125
-F 0 "#PWR?" H 3850 2875 50  0001 C CNN
-F 1 "GND" H 3850 2975 50  0000 C CNN
-F 2 "" H 3850 3125 50  0001 C CNN
-F 3 "" H 3850 3125 50  0001 C CNN
-	1    3850 3125
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3650 2950 3850 2950
 Wire Wire Line
@@ -1253,4 +1253,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 3050 3850 3050
 Connection ~ 3850 3050
+Wire Wire Line
+	1050 3450 1250 3450
+Text GLabel 3850 1350 2    60   Input ~ 0
+VDivEnable
+Wire Wire Line
+	3650 1350 3850 1350
 $EndSCHEMATC
